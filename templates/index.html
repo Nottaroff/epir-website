@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+    <title>EPIR - {% block title %} {% endblock %}</title>
+</head>
+<body>
+
+    <!-- CABECERA -->
+    {% include "base.html" %}
+
+    <!-- CONTENIDO - TEMPLATE TAGS-->
+    {% block content %} {% endblock %}
+
+    <!-- PIE DE PAGINA -->
+    {% include 'footer.html' %}
+
+</body>
+</html>

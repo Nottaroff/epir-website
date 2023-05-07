@@ -1,0 +1,77 @@
+{% extends 'index.html'%}
+
+{% block title %} Valores {% endblock %}
+
+
+{% block head %}
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <style>
+    body {
+        overflow-x: hidden;
+    }
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .underline {
+        display: block;
+        height: 3px;
+        width: 60%;
+        margin: 20px auto;
+        background-color: #000000;
+    }
+    .video-container {
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+    }
+  </style>
+{% endblock %}
+
+{% block content %} 
+
+<div class="d-flex justify-content-center align-items-center" style="height: 75vh;">
+    <div class="video-wrapper" style="text-align:center;">
+        <h2>Video de introducción </h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Edw3lUxOgCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="underline"></div>
+<div class="col-lg-12 mb-2 mb-lg-0 mx-auto">
+    <div class="card hover-bg-secondary shadow py-4 active">
+      <div class="card-body text-center d-flex align-items-center justify-content-center">
+        <div class="row">
+          <div class="col-md-12 text-left text-center">
+            <section class="values">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2 class="section-title mb-4">Nuestros valores</h2>
+                    <div class="d-flex justify-content-center align-items-center" style="height: 50vh;">
+                        <div class="text-center">
+                          <img src="static/use/valoresepir.png" alt="Descripción de la imagen">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

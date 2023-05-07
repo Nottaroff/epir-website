@@ -1,0 +1,105 @@
+{% extends 'index.html' %}
+
+{% block content %} 
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>EPIR | Equipos de protección individuales robotizados</title><!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<style>
+  body {
+      overflow-x: hidden;
+  }
+</style>
+
+<body>
+  <!-- banner -->
+  <div id="banner">
+    <video src="static/banner/epir.mp4" autoplay="" muted="" loop="" style="width: 100%; height: auto;">Tu navegador no admite la etiqueta de video.</video>
+    <hr style="border-top: 5px solid black; margin-top: 0; margin-bottom: 0;">
+  </div><br>
+  <br>
+  <!-- Contenido -->
+  <div class="col-lg-12 mb-2 mb-lg-0 mx-auto">
+    <div class="card hover-bg-secondary shadow py-4 active">
+      <div class="card-body text-center d-flex align-items-center justify-content-center">
+        <div class="row">
+          <div class="col-md-6"><img src="/static/banner/home1.jpg" class="img-fluid" alt="Responsive image"></div>
+          <div class="col-md-6 text-left">
+            <h4 class="mb-4" style="font-size: 28px;">¿Que es EPI?</h4>
+            <p style="font-size: 18px;">EPIR, es una empresa de equipos de protección individual robotizados que se dedica a desarrollar y fabricar equipos robotizados diseñados específicamente para proteger a los trabajadores en entornos peligrosos o de riesgo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <br>
+  <!-- servicios -->
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="icon-container"></div>
+              <h4 class="card-title">Misión</h4>
+              <lord-icon
+              src="https://cdn.lordicon.com/iltqorsz.json"
+              trigger="hover"
+              colors="primary:#121331,secondary:#7166ee"
+              style="width:150px;height:150px">
+            </lord-icon>  
+              <p class="card-description" style="text-align: justify;">Proporcionar <strong>soluciones tecnológicas innovadoras y de alta calidad</strong> para mejorar la seguridad, la salud y la productividad de los trabajadores en entornos industriales y de construcción.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="icon-container"></div>
+              <h4 class="card-title">Visión</h4>
+
+                <lord-icon
+                    src="https://cdn.lordicon.com/tyounuzx.json"
+                    trigger="hover"
+                    colors="primary:#121331,secondary:#4030e8"
+                    style="width:150px;height:150px">
+                </lord-icon>
+             
+              <p class="card-description" style="text-align: justify;">Ser <strong>líderes en el mercado de equipos de protección individual robotizados, reconocidos</strong> por nuestra innovaciones tecnológicas y excelencia en el diseño, que mejore la seguridad y la calidad de vida de los trabajadores en entornos industriales y de construcción</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <a href="/valores" style="text-decoration: none;">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="icon-container"></div>
+              <h4 class="card-title">Valores</h4>
+
+                <lord-icon
+                  src="https://cdn.lordicon.com/rjzlnunf.json"
+                  trigger="hover"
+                  colors="primary:#121331,secondary:#911710"
+                  style="width:150px;height:150px">
+                </lord-icon>
+              <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+              <p class="card-description">Descubre los <strong>valores</strong> de EPIR y únete a nuestra visión de crear un mundo más seguro y productivo.</p>
+            </div>
+          </div></a>
+        </div><br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </section>
+  <br>
+</body>
+</html>
+{% endblock %}
